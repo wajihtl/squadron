@@ -7,7 +7,7 @@
 #include "ennemi.h"
 void initialiserennemi(ennemis *ennemi)
 {
-ennemi->position.x = 500 ;
+ennemi->position.x = 200 ;
 ennemi->position.y = 275 ;
 ennemi->fond1 = IMG_Load("x1.png");
 ennemi->fond2 = IMG_Load("x2.png");
