@@ -7,8 +7,8 @@
 #include "perso.h"
 void initialiserperso(perso *perso)
 {
-perso->position.x = 100 ;
-perso->position.y = 275 ;
+perso->position.x = 270 ;
+perso->position.y = 350 ;
 perso->fond0 = IMG_Load("0.png");
 perso->fond1 = IMG_Load("1.png");
 perso->fond2 = IMG_Load("2.png");
