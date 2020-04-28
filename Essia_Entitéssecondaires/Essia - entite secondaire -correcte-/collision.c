@@ -14,7 +14,7 @@
 Uint32 getpixel(SDL_Surface *surface, int x, int y)
 {
     int bpp = surface->format->BytesPerPixel;
-    /* Here p is the address to the pixel we want to retrieve */
+   
     Uint8 *p = (Uint8 *)surface->pixels + y * surface->pitch + x * bpp;
 
     switch(bpp) {
@@ -38,35 +38,11 @@ Uint32 getpixel(SDL_Surface *surface, int x, int y)
         break;
 
     default:
-        return 0;       /* shouldn't happen, but avoids warnings */
+        return 0;       
     }
 }
 
-/*SDL_Rect collision(SDL_Rect camera,perso perso,int d)
-{
-if(camera.x<0)
-{
-camera.x=0;
-}
 
-if(camera.x>6460)
-{
-camera.x=6460;
-}
-if(camera.x>900&&camera.x<1080&&perso.position.y==435)
-{
-if(d==1)
-{
-camera.x=900;
-}
-if(d==2)
-{
-camera.x=1080;
-}
-}
-return camera ;
-}
-*/
 
 int collision(perso perso,map map,SDL_Rect camera)
 {
